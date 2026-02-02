@@ -26,7 +26,28 @@
 </head>
 
 <body class="bg-[#f5fbfd] text-[#333333] font-serif leading-relaxed">
-  <header class="sticky top-0 z-50 bg-white shadow-sm">
+  <!-- Sticky Phone Bar -->
+  <div class="fixed top-0 left-0 w-full bg-[#af8d53] text-white z-50 shadow-md h-[42px] flex items-center">
+    <div class="max-w-7xl mx-auto w-full px-4 flex justify-between items-center text-sm">
+
+      <!-- Coins Logos -->
+      <div class="flex items-center gap-4">
+        <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" class="h-5 md:h-6" alt="BTC" />
+        <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" class="h-5 md:h-6" alt="ETH" />
+        <img src="https://cryptologos.cc/logos/xrp-xrp-logo.png" class="h-5 md:h-6" alt="XRP" />
+        <img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png" class="h-5 md:h-6" alt="DOGE" />
+      </div>
+
+      <!-- Phone -->
+      <button onclick="callNow()" class="font-semibold hover:underline">
+        📞 +1-855-775-4304
+      </button>
+
+    </div>
+  </div>
+
+
+  <header class="sticky top-[40px] z-40 bg-white shadow-sm">
     <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
       <!-- Logo -->
