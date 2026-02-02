@@ -53,7 +53,7 @@ window.addEventListener("load", () => {
   if (path === "/" || path.includes("index.html")) {
     setTimeout(() => {
       chatBox.classList.remove("hidden");
-    }, 3000);
+    }, 2000);
   }
 });
 
@@ -81,4 +81,5 @@ if (faqButtons) {
       icon.classList.toggle("rotate-180");
     });
   });
+
 }
