@@ -17,7 +17,7 @@ links.forEach(link => {
 });
 
 function callNow() {
-  window.location.href = "tel:+1-855-775-4304";
+  window.location.href = "tel:+1-833-297-9112";
 }
 
 AOS.init({
@@ -83,3 +83,4 @@ if (faqButtons) {
   });
 
 }
+
