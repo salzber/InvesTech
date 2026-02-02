@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frequently Asked Questions | InvesTech</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/index.css" />
+
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+
+
+
+
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-[#f5fbfd] text-[#333333] font-serif leading-relaxed">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-1">
+                <div class="flex items-center justify-center w-[55px] h-[55px] rounded-full   overflow-hidden">
+                    <img src="/assets/images/logo.webp" alt="InvesTech Logo" class="w-full h-full object-contain " />
+                </div>
+
+                <span class="text-gray-700 font-semibold">InvesTech</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/About/" class="nav-link">About</a></li>
+                <li><a href="/Contact/" class="nav-link">Contacts</a></li>
+                <li><a href="/FAQ/" class="nav-link">FAQ</a></li>
+                <li><a href="/Practice_area/" class="nav-link">Practice Areas</a></li>
+                <li><a href="/Wallet-access-restoration/" class="nav-link">Wallet</a></li>
+                <li><a href="/CryptocurrencyRecovery/" class="nav-link">Crypto</a></li>
+                <li><a href="/Fund-tracing-fraud-investigation/" class="nav-link">Fund</a></li>
+            </ul>
+
+            <!-- Desktop Button -->
+            <button onclick="openChat()"
+                class="hidden md:block bg-[#af8d53] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#997a3f] transition">
+                CONTACT US
+            </button>
+
+            <!-- Mobile Toggle Button -->
+            <button id="menuBtn" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200 px-6 pb-6">
+            <ul class="flex flex-col gap-4 mt-4 text-sm font-medium">
+                <li><a href="/" class="mobile-link">Home</a></li>
+                <li><a href="/About/" class="mobile-link">About</a></li>
+                <li><a href="/Contact/" class="mobile-link">Contacts</a></li>
+                <li><a href="/FAQ/" class="mobile-link">FAQ</a></li>
+                <li><a href="/Practice_area/" class="mobile-link">Practice Areas</a></li>
+                <li><a href="/Wallet-access-restoration/" class="mobile-link">Wallet</a></li>
+                <li><a href="/CryptocurrencyRecovery/" class="mobile-link">Crypto</a></li>
+                <li><a href="/Fund-tracing-fraud-investigation/" class="mobile-link">Fund</a></li>
+            </ul>
+
+            <button
+                class="mt-6 w-full bg-[#af8d53] text-white py-3 rounded-md font-semibold hover:bg-[#997a3f] transition">
+                CONTACT US
+            </button>
+        </div>
+    </header>
+
+
+    <main class="overflow-hidden">
+
+        <!-- Main Content -->
+        <main class="max-w-5xl mx-auto px-6 py-20">
+
+            <p class="text-xs text-[#3B4150] mb-3 font-medium">F.A.Q.</p>
+            <h1 class="text-3xl md:text-4xl font-serif font-semibold text-[#0F172A] mb-16">
+                Frequently Asked Questions
+            </h1>
+
+            <div class="space-y-6" id="faqAccordion">
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>Which cryptocurrencies do you support?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            We assist with recovery of most cryptocurrencies including Bitcoin, Ethereum,
+                            Litecoin, Dogecoin, Monero, Stellar, and more.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>How can I trust you with my wallet?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            We operate under legally binding contracts and strict verification.
+                            All recovery requests are authenticated and compliant.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>How do you get paid?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            Our fees are performance-based. You pay only if recovery is successful.
+                        </p>
+                    </div>
+                </div>
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>How long does the recovery process usually take?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            Recovery timelines vary depending on transaction complexity, jurisdiction,
+                            and cooperation from exchanges. Some cases resolve within days,
+                            while others may take several weeks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>Do you require access to my private keys?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            No. We never ask for private keys or seed phrases.
+                            Our investigations rely on blockchain forensics,
+                            transaction analysis, and legal coordination.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>Is my information kept confidential?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            Yes. All client data is handled under strict confidentiality agreements
+                            and in compliance with data protection and privacy regulations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>Can you help with international or cross-border cases?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            Yes. We specialize in cross-border crypto investigations
+                            and work with international exchanges, legal teams,
+                            and enforcement partners worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ ITEM -->
+                <div class="bg-white border border-[#E2E8F0] rounded-lg overflow-hidden">
+                    <button
+                        class="faq-btn w-full flex justify-between items-center p-6 font-semibold text-[#2563EB] text-left">
+                        <span>What should I do immediately after discovering a crypto theft?</span>
+                        <svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-xs text-[#71717A] leading-relaxed max-w-[450px]">
+                            Immediately stop further transactions, secure your remaining assets,
+                            document transaction IDs, and contact a professional recovery team
+                            as soon as possible to maximize recovery chances.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <!-- Grey Section -->
+        <section
+            class="relative bg-gradient-to-b from-gray-400 to-gray-500 py-16 text-center text-white mt-32 overflow-hidden">
+
+            <!-- Soft overlay for depth -->
+            <div class="absolute inset-0 bg-black/5"></div>
+
+            <div class="relative max-w-4xl mx-auto px-6">
+
+                <!-- Divider -->
+                <div class="w-20 h-px bg-white mx-auto mb-6"></div>
+
+                <!-- Heading -->
+                <h3 class="text-xl md:text-2xl font-semibold mb-3 font-serif tracking-wide">
+                    We Help You Recover What’s Yours
+                </h3>
+
+                <!-- Text -->
+                <p class="text-xs md:text-sm max-w-xl mx-auto text-white/90 leading-relaxed">
+                    Our team investigates fraud, traces stolen assets, and enforces recovery across borders —
+                    with full legal and technical support.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-[#232d3f] to-[#1b2331] text-gray-300 font-serif text-sm leading-relaxed">
+
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+            <div class="max-w-xl mx-auto text-center flex flex-col items-center gap-6">
+
+                <!-- Icon -->
+                <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white/5 shadow-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#c6a85a]" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 2c1.104 0 2 .896 2 2v3h-4V4c0-1.104.896-2 2-2zm0 16v4m-4-4H6a2 2 0 01-2-2v-3m12-3v3a2 2 0 01-2 2h-2m0 0v-4m0 0V6a2 2 0 012-2h2m-6 14a6 6 0 100-12 6 6 0 000 12z" />
+                    </svg>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-white font-semibold text-lg tracking-wide">
+                    Asset Recovery Experts
+                </h3>
+
+                <!-- Description -->
+                <p class="max-w-md text-[14px] text-gray-400 leading-relaxed">
+                    Leverage legal and cyber expertise to navigate challenges and reclaim a secure
+                    and confident future at a pivotal moment in your life.
+                </p>
+
+                <!-- Footer navigation -->
+                <nav
+                    class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs font-medium text-[#c6a85a] select-none mt-2">
+                    <a href="/" class="hover:text-white transition">Home</a>
+                    <a href="/CryptocurrencyRecovery/" class="hover:text-white transition">Crypto Recovery</a>
+                    <a href="/Practice_area/" class="font-semibold text-white">Practice Areas</a>
+                    <a href="/About/" class="hover:text-white transition">About Us</a>
+                    <a href="/FAQ/" class="hover:text-white transition">FAQ</a>
+                    <a href="/Contact/" class="hover:text-white transition">Contact</a>
+                </nav>
+
+                <!-- Divider -->
+                <div class="w-24 h-px bg-[#c6a85a]/40 mt-6"></div>
+
+                <!-- Copyright -->
+                <p class="mt-4 text-[#a88642]/90 text-xs">
+                    © 2026 Asset Recovery Experts. All rights reserved.
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Floating Chat Button -->
+    <button id="chatBtn"
+        class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#af8d53] text-white flex items-center justify-center shadow-lg hover:scale-105 transition">
+
+        <!-- Chat Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8m-8 4h6m5 2a9 9 0 10-4 1.09L21 21z" />
+        </svg>
+    </button>
+
+
+    <!-- Chat Popup -->
+    <div id="chatBox"
+        class="fixed bottom-24 right-6 z-50 w-80 max-w-[90%] bg-white rounded-2xl shadow-2xl hidden flex flex-col overflow-hidden">
+
+        <!-- Header -->
+        <div class="bg-[#af8d53] text-white px-4 py-3 flex justify-between items-center">
+            <h4 class="font-semibold text-sm">Free Consultation</h4>
+            <button id="closeChat" class="text-white hover:opacity-70">✕</button>
+        </div>
+
+        <!-- Chat Form (Formspree Connected) -->
+        <form action="https://formspree.io/f/xwvqbwda" method="POST" class="p-4 space-y-3 text-sm text-gray-700">
+
+            <p class="text-xs text-gray-500">
+                Leave your details and our experts will contact you shortly.
+            </p>
+
+            <!-- Name -->
+            <input type="text" name="name" required placeholder="Your Name"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+            <!-- Email -->
+            <input type="email" name="email" required placeholder="Email Address"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+            <!-- Phone -->
+            <input type="tel" name="phone" placeholder="Phone Number"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+            <!-- Message -->
+            <textarea name="message" rows="3" required placeholder="Briefly describe your issue"
+                class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]"></textarea>
+
+            <!-- Hidden subject (optional but professional) -->
+            <input type="hidden" name="_subject" value="New Consultation Request" />
+
+            <!-- Submit -->
+            <button type="submit"
+                class="w-full bg-[#af8d53] text-white py-2 rounded-md font-semibold hover:bg-[#997a3f] transition">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

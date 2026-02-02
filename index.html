@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blockchain Cyber Investigations & Recovery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/index.css" />
+
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+
+
+
+
+
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-[#f5fbfd] text-[#333333] font-serif leading-relaxed">
+  <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-1">
+        <div class="flex items-center justify-center w-[55px] h-[55px] rounded-full   overflow-hidden">
+          <img src="assets/images/logo.webp" alt="InvesTech Logo" class="w-full h-full object-contain " />
+        </div>
+
+        <span class="text-gray-700 font-semibold">InvesTech</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/About/" class="nav-link">About</a></li>
+        <li><a href="/Contact/" class="nav-link">Contacts</a></li>
+        <li><a href="/FAQ/" class="nav-link">FAQ</a></li>
+        <li><a href="/Practice_area/" class="nav-link">Practice Areas</a></li>
+        <li><a href="/Wallet-access-restoration/" class="nav-link">Wallet</a></li>
+        <li><a href="/CryptocurrencyRecovery/" class="nav-link">Crypto</a></li>
+        <li><a href="/Fund-tracing-fraud-investigation/" class="nav-link">Fund</a></li>
+      </ul>
+
+      <!-- Desktop Button -->
+      <button onclick="openChat()"
+        class="hidden md:block bg-[#af8d53] text-white px-6 py-2 rounded-md font-semibold hover:bg-[#997a3f] transition">
+        CONTACT US
+      </button>
+
+      <!-- Mobile Toggle Button -->
+      <button id="menuBtn" class="md:hidden text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200 px-6 pb-6">
+      <ul class="flex flex-col gap-4 mt-4 text-sm font-medium">
+        <li><a href="/" class="mobile-link">Home</a></li>
+        <li><a href="/About/" class="mobile-link">About</a></li>
+        <li><a href="/Contact/" class="mobile-link">Contacts</a></li>
+        <li><a href="/FAQ/" class="mobile-link">FAQ</a></li>
+        <li><a href="/Practice_area/" class="mobile-link">Practice Areas</a></li>
+        <li><a href="/Wallet-access-restoration/" class="mobile-link">Wallet</a></li>
+        <li><a href="/CryptocurrencyRecovery/" class="mobile-link">Crypto</a></li>
+        <li><a href="/Fund-tracing-fraud-investigation/" class="mobile-link">Fund</a></li>
+      </ul>
+
+      <button class="mt-6 w-full bg-[#af8d53] text-white py-3 rounded-md font-semibold hover:bg-[#997a3f] transition">
+        CONTACT US
+      </button>
+    </div>
+  </header>
+
+
+  <main class="overflow-hidden">
+    <!-- Hero Section -->
+
+    <section class="relative overflow-hidden bg-gradient-to-br from-[#edf7f9] via-white to-[#f5fbfd]">
+
+      <!-- Background Decorative Blur -->
+      <div class="absolute -top-20 -left-20 w-96 h-96 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div
+        class="relative max-w-7xl mx-auto px-6 md:px-12 pt-24 md:pt-32 pb-28 grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Left Content -->
+        <div data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl xl:text-6xl font-serif font-bold text-[#af8d53] leading-tight max-w-xl">
+            Trusted Experts in <br />
+            <span class="text-gray-800">Blockchain Recovery</span>
+            & Cyber Fraud Investigation
+          </h1>
+
+          <p class="mt-6 text-gray-700 text-lg max-w-lg">
+            We use cutting-edge blockchain and cyber investigation strategies to ensure the safety of your digital
+            assets
+            and recover losses swiftly and securely.
+          </p>
+
+          <div class="mt-10 flex items-center gap-6">
+            <button onclick="callNow()" class="bg-[#af8d53] text-white font-semibold
+         px-6 md:px-8
+         py-3
+         rounded-md
+         w-full sm:w-auto
+         text-sm sm:text-base
+         hover:bg-[#997a3f]
+         transition
+         hover:-translate-y-1
+         shadow-lg
+         active:scale-95">
+              CONTACT US NOW
+            </button>
+
+            <span class="text-sm text-gray-500 italic">
+              100% Confidential & Secure
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Images -->
+        <div class="relative hidden md:block" data-aos="zoom-in">
+
+          <!-- Image 1 -->
+          <img
+            src="https://cdn.prod.website-files.com/6645251bcd94beb3db6bd978/6647aad95ae0e1934793b3e3_hack-crypto-threat.jpg"
+            alt="Business team discussing"
+            class="rounded-2xl shadow-2xl relative z-10 hover:scale-105 transition duration-500" />
+
+          <!-- Image 2 -->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaG58gfPfoBjd4MeTudNJkrJTa_DB3aYiUQw&s"
+            alt="Signing documents"
+            class="rounded-2xl shadow-xl absolute -bottom-16 -left-20 border-4 border-white hover:scale-105 transition duration-500"
+            data-aos="fade-up" data-aos-delay="200" />
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="relative bg-white overflow-hidden">
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+
+        <!-- Image -->
+        <div class="relative" data-aos="fade-right">
+          <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#af8d53]/10 rounded-full blur-2xl"></div>
+
+          <img
+            src="https://cdn.prod.website-files.com/660a94378d5efa3a1040a763/682dbe2d2055d6b0656b0420_Market%20Participants%20in%20Cryptocurrency%20Trading.png"
+            alt="Team collaboration"
+            class="relative  imgy rounded-2xl shadow-2xl w-full object-cover hover:scale-[1.02] transition duration-500" />
+        </div>
+
+        <!-- Content -->
+        <div class="max-w-xl text-gray-700 font-serif space-y-6" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-semibold text-[#af8d53]">
+            Who We Are
+          </h2>
+
+          <p class="text-base md:text-lg leading-relaxed">
+            We are a dedicated team of blockchain and cyber fraud experts with years of combined experience in
+            investigations, digital asset recovery, and cybersecurity.
+          </p>
+
+          <p class="text-base md:text-lg leading-relaxed">
+            Our mission is to help businesses, organizations, and individuals protect and recover their digital assets
+            with complete transparency, compliance, and trust.
+          </p>
+
+          <!-- Address -->
+          <div class="pt-4 border-t border-gray-200">
+            <p class="text-sm text-gray-500 font-semibold">Office Address</p>
+            <p class="text-sm text-gray-500">123 Blockchain Ave, Suite 500</p>
+            <p class="text-sm text-gray-500">New York, NY 10005, USA</p>
+          </div>
+
+          <!-- CTA -->
+          <button onclick="callNow()"
+            class="inline-block mt-6 bg-[#af8d53] text-white font-semibold px-8 py-3 rounded-md hover:bg-[#997a3f] hover:-translate-y-1 transition shadow-lg">
+            Contact Us
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="relative bg-[#f9fafb] overflow-hidden">
+
+      <!-- Soft background blur -->
+      <div class="absolute top-0 left-0 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 text-gray-700 font-serif">
+
+        <!-- Heading -->
+        <div class="max-w-3xl mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-semibold text-[#af8d53] mb-6">
+            Why Organizations & Investors Trust Us
+          </h2>
+          <p class="text-base md:text-lg leading-relaxed">
+            Our clients choose us because we combine technical excellence with transparency, strict legal compliance,
+            and round-the-clock professional support.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+          <!-- Card -->
+          <div data-aos="fade-up"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Verified Results</h3>
+            <p class="text-sm md:text-base">
+              Over 12,000 cases successfully handled with verified asset recoveries.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="100"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Experienced Experts</h3>
+            <p class="text-sm md:text-base">
+              Led by certified blockchain analysts and cybercrime investigators.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="200"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Innovative Solutions</h3>
+            <p class="text-sm md:text-base">
+              Cutting-edge technology integrating AI and forensic analytics.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="300"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Transparent Process</h3>
+            <p class="text-sm md:text-base">
+              Clear updates and open communication throughout every recovery stage.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="400"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Legal & Compliance</h3>
+            <p class="text-sm md:text-base">
+              Strict adherence to global regulatory and compliance standards.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="500"
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition">
+            <h3 class="font-semibold text-lg text-[#af8d53] mb-3">Dedicated Support</h3>
+            <p class="text-sm md:text-base">
+              24/7 professional assistance tailored to every client’s needs.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 text-center" data-aos="zoom-in">
+          <p class="mb-6 text-gray-600 italic text-sm md:text-base">
+            Yes, I am ready to protect and recover. Activate your recovery path today.
+          </p>
+          <button onclick="callNow()"
+            class="bg-[#af8d53] text-white font-semibold px-10 py-3 rounded-md hover:bg-[#997a3f] hover:-translate-y-1 transition shadow-lg">
+            CONTACT US NOW
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How Recovery Works -->
+    <section id="how-it-works" class="relative bg-white overflow-hidden">
+
+      <!-- Decorative background -->
+      <div class="absolute top-10 left-10 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 text-gray-700 font-serif">
+
+        <!-- Heading -->
+        <h2 class="text-center font-semibold text-3xl md:text-4xl text-[#af8d53] mb-16" data-aos="fade-up">
+          How Recovery Works
+        </h2>
+
+        <!-- Steps -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+
+          <!-- Step 1 -->
+          <div
+            class="bg-[#f9fafb] rounded-2xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up">
+            <div
+              class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#af8d53]/10 text-[#af8d53] font-bold text-xl">
+              01
+            </div>
+            <h3 class="font-semibold text-lg mb-2 text-[#af8d53]">Service Plan</h3>
+            <p class="text-sm md:text-base">
+              We design a tailored recovery strategy based on your unique case and requirements.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="bg-[#f9fafb] rounded-2xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="150">
+            <div
+              class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#af8d53]/10 text-[#af8d53] font-bold text-xl">
+              02
+            </div>
+            <h3 class="font-semibold text-lg mb-2 text-[#af8d53]">On-Chain Investigation</h3>
+            <p class="text-sm md:text-base">
+              Our experts analyze blockchain activity using forensic tools and advanced analytics.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="bg-[#f9fafb] rounded-2xl p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#af8d53]/10 text-[#af8d53] font-bold text-xl">
+              03
+            </div>
+            <h3 class="font-semibold text-lg mb-2 text-[#af8d53]">Recovery & Reporting</h3>
+            <p class="text-sm md:text-base">
+              Assets are recovered where possible, with transparent reporting at every stage.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center border-t border-gray-200 pt-16"
+          data-aos="fade-up">
+
+          <div>
+            <div class="text-2xl md:text-3xl font-extrabold text-[#af8d53]">12,000+</div>
+            <div class="uppercase tracking-wide text-xs text-gray-500 mt-1">
+              Cases Served
+            </div>
+          </div>
+
+          <div>
+            <div class="text-2xl md:text-3xl font-extrabold text-[#af8d53]">13,500+</div>
+            <div class="uppercase tracking-wide text-xs text-gray-500 mt-1">
+              Ongoing Cases
+            </div>
+          </div>
+
+          <div>
+            <div class="text-2xl md:text-3xl font-extrabold text-[#af8d53]">$80M+</div>
+            <div class="uppercase tracking-wide text-xs text-gray-500 mt-1">
+              Value Recovered
+            </div>
+          </div>
+
+          <div>
+            <div class="text-2xl md:text-3xl font-extrabold text-[#af8d53]">25+</div>
+            <div class="uppercase tracking-wide text-xs text-gray-500 mt-1">
+              Years Experience
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Accreditations & Recognition -->
+    <section class="relative bg-[#f9fafb] overflow-hidden">
+
+      <!-- Soft background glow -->
+      <div class="absolute top-0 right-0 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 font-serif text-gray-700">
+
+        <!-- Heading -->
+        <h2 class="text-[#af8d53] text-3xl md:text-4xl font-semibold mb-16" data-aos="fade-up">
+          Accreditations & Global Recognition
+        </h2>
+
+        <!-- Timeline / Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl">
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up">
+            <span class="text-sm font-semibold text-[#af8d53]">2023</span>
+            <p class="mt-2">
+              Received the Blockchain Security Excellence Award for innovation.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="100">
+            <span class="text-sm font-semibold text-[#af8d53]">2021</span>
+            <p class="mt-2">
+              Partnered with international cybercrime task forces for enhanced collaboration.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="200">
+            <span class="text-sm font-semibold text-[#af8d53]">2018</span>
+            <p class="mt-2">
+              Certified by the Global Cybersecurity Center of Excellence.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="300">
+            <span class="text-sm font-semibold text-[#af8d53]">2015</span>
+            <p class="mt-2">
+              Recognized as leaders in blockchain investigation by industry federation.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="400">
+            <span class="text-sm font-semibold text-[#af8d53]">2009</span>
+            <p class="mt-2">
+              Accredited by the International Association of Investigators.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="500">
+            <span class="text-sm font-semibold text-[#af8d53]">Global Trust</span>
+            <p class="mt-2">
+              Trusted by Fortune 500 companies and global banks worldwide.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 text-center" data-aos="zoom-in">
+          <button onclick="callNow()"
+            class="bg-[#af8d53] text-white font-semibold px-10 py-3 rounded-md hover:bg-[#997a3f] hover:-translate-y-1 transition shadow-lg">
+            CONTACT US NOW
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Time It Works / Process Timeline -->
+    <section id="time-it-works" class="relative bg-[#f9fafb] overflow-hidden">
+
+      <!-- Background glow -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 font-serif text-gray-700">
+
+        <!-- Heading -->
+        <h2 class="text-center font-semibold text-3xl md:text-4xl text-[#af8d53] mb-20" data-aos="fade-up">
+          Our Recovery Timeline
+        </h2>
+
+        <!-- Timeline -->
+        <div class="relative max-w-4xl mx-auto">
+
+          <!-- Vertical line -->
+          <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gray-300"></div>
+
+          <!-- Step 1 -->
+          <div class="relative md:flex md:justify-between mb-16" data-aos="fade-right">
+            <div class="md:w-5/12 bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition">
+              <h3 class="text-xl font-semibold text-[#af8d53] mb-3">
+                1. Consulting
+              </h3>
+              <p>
+                We start with a confidential consultation to understand your case, collect evidence,
+                and define a clear recovery roadmap.
+              </p>
+            </div>
+            <div
+              class="hidden md:flex w-10 h-10 rounded-full bg-[#af8d53] text-white items-center justify-center font-bold absolute left-1/2 -translate-x-1/2">
+              1
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="relative md:flex md:flex-row-reverse md:justify-between mb-16" data-aos="fade-left">
+            <div class="md:w-5/12 bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition">
+              <h3 class="text-xl font-semibold text-[#af8d53] mb-3">
+                2. Strategic Investigation
+              </h3>
+              <p>
+                Our analysts conduct deep on-chain and off-chain investigations using forensic tools,
+                tracking assets and identifying risks.
+              </p>
+            </div>
+            <div
+              class="hidden md:flex w-10 h-10 rounded-full bg-[#af8d53] text-white items-center justify-center font-bold absolute left-1/2 -translate-x-1/2">
+              2
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative md:flex md:justify-between" data-aos="fade-right">
+            <div class="md:w-5/12 bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition">
+              <h3 class="text-xl font-semibold text-[#af8d53] mb-3">
+                3. Action & Recovery
+              </h3>
+              <p>
+                We coordinate with exchanges, blockchain networks, and legal bodies
+                to recover assets and deliver transparent reports.
+              </p>
+            </div>
+            <div
+              class="hidden md:flex w-10 h-10 rounded-full bg-[#af8d53] text-white items-center justify-center font-bold absolute left-1/2 -translate-x-1/2">
+              3
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-20 text-center" data-aos="zoom-in">
+          <button onclick="openChat()"
+            class="bg-[#af8d53] text-white font-semibold px-12 py-3 rounded-md hover:bg-[#997a3f] hover:-translate-y-1 transition shadow-lg">
+            GET FREE CONSULTATION
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Our Practice Areas -->
+    <section id="practice-areas" class="relative bg-white overflow-hidden">
+
+      <!-- Soft background blur -->
+      <div class="absolute top-0 left-0 w-72 h-72 bg-[#af8d53]/10 rounded-full blur-3xl"></div>
+
+      <div class="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28 font-serif text-gray-700">
+
+        <!-- Heading -->
+        <h2 class="text-center font-semibold text-3xl md:text-4xl text-[#af8d53] mb-8" data-aos="fade-up">
+          Our Practice Areas
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="max-w-3xl mx-auto text-center text-base md:text-lg mb-16" data-aos="fade-up" data-aos-delay="100">
+          We specialize in a wide range of blockchain and cyber investigations, delivering clarity,
+          recovery, and protection against complex digital frauds.
+        </p>
+
+        <!-- Hero Image -->
+        <div class="max-w-6xl mx-auto mb-20" data-aos="zoom-in">
+          <img
+            src="https://i0.wp.com/bitcoinsuperannuation.com.au/wp-content/uploads/2023/06/Cryptography-and-Bitcoin.png?fit=1200%2C628&ssl=1"
+            alt="Professional  investigation meeting" class="rounded-2xl  imgy shadow-2xl w-full object-cover" />
+        </div>
+
+        <!-- Practice Cards -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
+
+          <!-- Card 1 -->
+          <div class="bg-[#f9fafb] rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up">
+            <h3 class="font-semibold text-xl text-[#af8d53] mb-3">
+              Real-Time Fraud Tracking
+            </h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Advanced monitoring systems that detect fraudulent blockchain transactions instantly,
+              allowing immediate intervention and damage control.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-[#f9fafb] rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="100">
+            <h3 class="font-semibold text-xl text-[#af8d53] mb-3">
+              Recovery From Scams
+            </h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Specialized recovery operations for stolen cryptocurrency and assets,
+              coordinated with exchanges and global enforcement agencies.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-[#f9fafb] rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="200">
+            <h3 class="font-semibold text-xl text-[#af8d53] mb-3">
+              Investment Scam Loss Mitigation
+            </h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Strategic negotiations and legal measures designed to minimize
+              financial losses caused by fraudulent investment platforms.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-[#f9fafb] rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition"
+            data-aos="fade-up" data-aos-delay="300">
+            <h3 class="font-semibold text-xl text-[#af8d53] mb-3">
+              Cybersecurity Guardian Services
+            </h3>
+            <p class="text-sm md:text-base leading-relaxed">
+              Comprehensive audits, wallet protection, and infrastructure security
+              plans to safeguard your blockchain ecosystem.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-b from-[#232d3f] to-[#1b2331] text-gray-300 font-serif text-sm leading-relaxed">
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-16">
+      <div class="max-w-xl mx-auto text-center flex flex-col items-center gap-6">
+
+        <!-- Icon -->
+        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-white/5 shadow-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#c6a85a]" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 2c1.104 0 2 .896 2 2v3h-4V4c0-1.104.896-2 2-2zm0 16v4m-4-4H6a2 2 0 01-2-2v-3m12-3v3a2 2 0 01-2 2h-2m0 0v-4m0 0V6a2 2 0 012-2h2m-6 14a6 6 0 100-12 6 6 0 000 12z" />
+          </svg>
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-white font-semibold text-lg tracking-wide">
+          Asset Recovery Experts
+        </h3>
+
+        <!-- Description -->
+        <p class="max-w-md text-[14px] text-gray-400 leading-relaxed">
+          Leverage legal and cyber expertise to navigate challenges and reclaim a secure
+          and confident future at a pivotal moment in your life.
+        </p>
+
+        <!-- Footer navigation -->
+        <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs font-medium text-[#c6a85a] select-none mt-2">
+          <a href="/" class="hover:text-white transition">Home</a>
+          <a href="/CryptocurrencyRecovery/" class="hover:text-white transition">Crypto Recovery</a>
+          <a href="/Practice_area/" class="font-semibold text-white">Practice Areas</a>
+          <a href="/About/" class="hover:text-white transition">About Us</a>
+          <a href="/FAQ/" class="hover:text-white transition">FAQ</a>
+          <a href="/Contact/" class="hover:text-white transition">Contact</a>
+        </nav>
+
+        <!-- Divider -->
+        <div class="w-24 h-px bg-[#c6a85a]/40 mt-6"></div>
+
+        <!-- Copyright -->
+        <p class="mt-4 text-[#a88642]/90 text-xs">
+          © 2026 Asset Recovery Experts. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Floating Chat Button -->
+  <button id="chatBtn"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#af8d53] text-white flex items-center justify-center shadow-lg hover:scale-105 transition">
+
+    <!-- Chat Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8m-8 4h6m5 2a9 9 0 10-4 1.09L21 21z" />
+    </svg>
+  </button>
+
+
+  <!-- Chat Popup -->
+  <div id="chatBox"
+    class="fixed bottom-24 right-6 z-50 w-80 max-w-[90%] bg-white rounded-2xl shadow-2xl hidden flex flex-col overflow-hidden">
+
+    <!-- Header -->
+    <div class="bg-[#af8d53] text-white px-4 py-3 flex justify-between items-center">
+      <h4 class="font-semibold text-sm">Free Consultation</h4>
+      <button id="closeChat" class="text-white hover:opacity-70">✕</button>
+    </div>
+
+    <!-- Body -->
+    <!-- Chat Form (Formspree Connected) -->
+    <form action="https://formspree.io/f/xwvqbwda" method="POST" class="p-4 space-y-3 text-sm text-gray-700">
+
+      <p class="text-xs text-gray-500">
+        Leave your details and our experts will contact you shortly.
+      </p>
+
+      <!-- Name -->
+      <input type="text" name="name" required placeholder="Your Name"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+      <!-- Email -->
+      <input type="email" name="email" required placeholder="Email Address"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+      <!-- Phone -->
+      <input type="tel" name="phone" placeholder="Phone Number"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]" />
+
+      <!-- Message -->
+      <textarea name="message" rows="3" required placeholder="Briefly describe your issue"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#af8d53]"></textarea>
+
+      <!-- Hidden subject (optional but professional) -->
+      <input type="hidden" name="_subject" value="New Consultation Request" />
+
+      <!-- Submit -->
+      <button type="submit"
+        class="w-full bg-[#af8d53] text-white py-2 rounded-md font-semibold hover:bg-[#997a3f] transition">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
